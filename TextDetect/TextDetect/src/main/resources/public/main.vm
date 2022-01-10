@@ -1,0 +1,12 @@
+#set( $title = "functionality.Main page" )
+#parse("public/top.vm")
+<form action="/detect" method="post" >
+    <fieldset>
+        <div>
+            <label for="url">Name: </label>
+            <input type="url" name="url" placeholder="Optional url. Click detect directly" id="url"/>
+        </div>
+        <input type="submit" value="Detect" id="detect" />
+    </fieldset>
+</form>
+#parse("public/bottom.vm")
